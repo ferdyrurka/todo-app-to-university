@@ -1,0 +1,5 @@
+.about-author-section > p, .about-company-section > p {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: inherit;
+}

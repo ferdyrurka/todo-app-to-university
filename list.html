@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pl" xmlns:rdf="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/list.css"/>
+    <link rel="stylesheet" href="./css/grid.css"/>
+</head>
+<body>
+<header>
+    <a class="brand" href="/">Todo App</a>
+</header>
+
+<div class="container">
+    <section class="base-section">
+        <h1>Zobacz swoje zadania</h1>
+        <div class="show" id="loading-tasks">
+            <span>Trwa ładowanie</span>
+        </div>
+        <ul id="task-group"></ul>
+        <span id="information"></span>
+    </section>
+</div>
+
+<footer>
+    <a href="./contact.html">Kontakt</a>
+</footer>
+
+<script src="./js/app.js"></script>
+<script>
+    showTaskList();
+</script>
+</body>
+</html>

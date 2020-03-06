@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    image: nginx:latest
+    volumes:
+      - './:/usr/share/nginx/html'
+      - '.docker/nginx.conf:/etc/nginx/nginx.conf'
+    ports:
+      - 8080:80

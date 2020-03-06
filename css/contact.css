@@ -1,0 +1,11 @@
+#success-send {
+    margin-top: 10px;
+}
+
+#error-send > .hide > span {
+    color: red;
+}
+
+#error-send, #success-send {
+    margin-top: 10px;
+}

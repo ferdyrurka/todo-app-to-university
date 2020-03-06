@@ -1,0 +1,35 @@
+.about-company-button {
+    text-align: center;
+}
+
+#error-add-task {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.show-error > span, #error-add-task > .hide > span {
+    color: red;
+    font-weight: bold;
+}
+
+.show-error {
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.list-section > svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.list-section {
+    text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+    .home-page-img {
+        max-width: 100%;
+        padding: 0;
+    }
+}

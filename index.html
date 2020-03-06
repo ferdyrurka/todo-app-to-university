@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl" xmlns:rdf="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/home.css"/>
+    <link rel="stylesheet" href="./css/form.css"/>
+    <link rel="stylesheet" href="./css/grid.css"/>
+</head>
+<body>
+    <header>
+        <a class="brand" href="/">Todo App</a>
+    </header>
+
+    <div class="container">
+        <section class="base-section">
+            <h1>Zoorganizuj swój dzień razem z Todo App</h1>
+            <img class="home-page-img" src="./assets/img/background_home_page.png" alt="home page image">
+            <div class="about-company-button">
+                <a href="./about-company.html"><button class="btn btn-black">Zobacz więcej o nas</button></a>
+            </div>
+        </section>
+        <section class="base-section">
+            <div class="input-group">
+                <input class="input-base" type="text" id="task-name" placeholder="Nazwa zadania">
+                <input class="input-base" type="text" id="comment" placeholder="Komentarz">
+                <input class="input-base" type="number" id="priority" min="1" max="5" placeholder="Priorytet od 1 do 5">
+                <button class="btn btn-black add-task-btn" onclick="addTask();">Dodaj zadanie</button>
+                <div id="error-add-task" class="hide">
+                    <span>Podałeś złe dane! Spróbuj ponownie!</span>
+                </div>
+                <div id="success-add-task" class="hide">
+                    <span>Gratulacje dodałeś zadanie</span>
+                </div>
+            </div>
+        </section>
+        <section class="base-section list-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+                <g>
+                    <rect fill="none" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
+                </g>
+                <g>
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="31.4375" x="30.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">TODO APP</text>
+                    <path d="m36.5,95.4375c1,0 1,1 1,2c0,2 -0.320366,4.025826 0,6c0.506542,3.121445 4.741066,11.726952 7,19c1.512432,4.869553 4.532902,14.219208 8,21c5.309109,10.383316 11.869896,16.57016 15,24c2.826439,6.709045 3.731445,14.076889 5,18c1.656853,5.123947 4.493462,7.878555 5,11c0.320366,1.974182 0,4 1,4c1,0 0,-2 0,-3c0,-3 0.633453,-6.022476 1,-9c0.503777,-4.092209 2.194092,-7.88855 5,-13c3.22805,-5.880447 5.416428,-11.275055 8,-16c4.127029,-7.547699 8.100746,-13.282349 13,-22c5.276657,-9.389191 11.508698,-18.642632 17,-27c4.427231,-6.737923 5.671219,-11.212601 9,-16c3.655426,-5.257172 5.346191,-8.70546 7,-11c1.307449,-1.813995 2,-3 3,-6l1,-1l0,-1l1,-1" id="svg_2" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="none"/>
+                    <path id="svg_3" d="m23.5,80.4375c8,43 161,-68 160.5,-68.4375c0.5,0.4375 -36.5,149.4375 -37,149c0.5,0.4375 -106.5,-0.5625 -107,-1c0.5,0.4375 -24.5,-142.5625 -25,-143c0.5,0.4375 46.5,59.4375 46,59c0.5,0.4375 8.5,11.4375 8,11c0.5,0.4375 -53.5,-49.5625 -45.5,-6.5625z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"/>
+                </g>
+            </svg>
+            <a href="./list.html"><button class="btn btn-black">Zobacz listę swoich zadań</button></a>
+        </section>
+    </div>
+
+    <footer>
+        <a href="./contact.html">Kontakt</a>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
