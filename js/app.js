@@ -63,7 +63,6 @@ function showTaskList() {
     let taskGroupElement = document.getElementById('task-group');
     show('loading-tasks');
 
-    let taskGroupHtml = '';
     let tasks = findAllTask();
 
     if (Object.keys(tasks).length === 0) {
@@ -73,7 +72,9 @@ function showTaskList() {
         return;
     }
 
-    for (let i = 1; i < Object.keys(tasks).length; i++) {
+    let taskGroupHtml = '';
+
+    for (let i = 1; i <= Object.keys(tasks).length; i++) {
         let task = tasks[i];
 
         taskGroupHtml += '<li><strong>Nazwa:</strong> ' + task['task_name'] +
